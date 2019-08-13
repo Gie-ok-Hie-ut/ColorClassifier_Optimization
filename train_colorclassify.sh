@@ -1,0 +1,4 @@
+#CUDA_VISIBLE_DEVICES=5 python train.py --dataroot /data1/victorleee/5k_resized/ --name colorclassify_pretrained_vgg19_ABCDE --model colorclassify --pool_size 50 --loadSize 256 --fineSize 224  --no_dropout --dataset_mode fivek $@
+CUDA_VISIBLE_DEVICES=7 python train.py --dataroot /data1/victorleee/AVA/ --name colorclassify_ava_no_pretrained_meanfirst --model colorclassify3 --pool_size 50 --loadSize 256 --fineSize 224  --no_dropout --dataset_mode ava $@
+#CUDA_VISIBLE_DEVICES=7 python train.py --dataroot /data1/victorleee/5k_resized/ --name colorclassify_pretrained_vgg19_AB --model colorclassify --pool_size 50 --loadSize 256 --fineSize 224  --no_dropout --dataset_mode fivek2 $@
+#CUDA_VISIBLE_DEVICES=7 python train.py --dataroot /data1/victorleee/5k_resized/ --name colorclassify_pretrained_nasnetalarge_fivek2_AB --model colorclassify --pool_size 50 --loadSize 340 --fineSize 331  --no_dropout --dataset_mode fivek2 $@
